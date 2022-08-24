@@ -4,7 +4,7 @@ import estilos from './header.module.css';
 const Header = () => {
   return (
     <header className={estilos.contenedorMain}>
-          <Navbar/>
+          <Navbar isFooter={true}/>
         </header>
   )
 }
