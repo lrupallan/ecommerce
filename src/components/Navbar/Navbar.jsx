@@ -1,6 +1,7 @@
 import estilos from './navbar.module.css';
 import CartWidget from '../CartWidget/CartWidget';
 import React from 'react';
+import Button from '../Button/Button';
 
 const Navbar = (props) => {
 
@@ -19,6 +20,7 @@ const Navbar = (props) => {
               <a href='https://google.com'>Contacto</a>
             </li>
           </ul>
+          <Button value='Sign in' variant='primary'/>
           <CartWidget/>
         </nav>
       );

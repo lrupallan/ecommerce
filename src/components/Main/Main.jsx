@@ -1,6 +1,7 @@
 import React from 'react';
 import estilos from'./main.module.css';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import Button from '../Button/Button';
 const Main = (props) => {
   
   return (
@@ -8,6 +9,7 @@ const Main = (props) => {
         <section>
           <h3>{props.test}</h3>
           <ItemListContainer saludo='Bienvenidos al centro de donaciones para perros y gatos rescatados&#128054;&#128049;&#128150;'/>
+          <Button value='Log out' variant='secondary'/>
         </section>
         
       </main>
