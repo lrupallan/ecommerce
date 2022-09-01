@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import estilos from './counter.module.css';
 
-const Counter = () => {
+const Counter = ({stock}) => {
   
 
   const [count, setCount] = useState(0);
 
 
   const sumar = () => {
-    count < 10? setCount(count + 1) : alert("Alcanzaste el máximo");
+    count < stock ? setCount(count + 1) : alert("Alcanzaste el máximo");
   };
 
   const restar = () => {

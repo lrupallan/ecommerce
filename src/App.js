@@ -8,7 +8,7 @@ const App = () => {
     <>
       <Header/>
       <Main test="Comision 37080"/>
-      <Counter />
+      <Counter stock={10}/>
       <Footer/>
     </>
   );
