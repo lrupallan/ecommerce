@@ -1,0 +1,20 @@
+.itemDetail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.itemTitle {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.itemPrice {
+ font-size: 2em;
+}
+
+.itemDescription {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  width: 50%;
+}
