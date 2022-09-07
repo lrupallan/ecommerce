@@ -4,8 +4,8 @@ import Navbar from '../Navbar/Navbar';
 const Footer = () => {
   return (
     <footer className={estilos.contenedorMain}>
-          <Navbar isFooter={false} />
-          <h5>Luciana Rupallan 2022</h5>
+          <Navbar className={estilos.menuFooter} isFooter={false} />
+          <h5 className={estilos.nombre}>Luciana Rupallan 2022</h5>
       </footer>
   )
 }

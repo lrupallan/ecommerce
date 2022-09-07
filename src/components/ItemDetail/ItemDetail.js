@@ -4,8 +4,8 @@ import estilos from '../ItemDetail/itemDetail.module.css'
 const ItemDetail = ({item}) => {
 
   return (
-    <div key={item.id} className={estilos.itemDetail}>
-      <div>
+    <div key={item.idProdNumerico} className={estilos.itemDetail}>
+      <div className={estilos.containerSecundario}>
       <p className={estilos.itemTitle}>{item.title}</p>
       <img className={estilos.itemImage} src={item.img} alt="" />
       <h5 className={estilos.itemPrice}>${item.price}/módulo</h5>

@@ -1,3 +1,12 @@
 .contenedorMain {
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(73, 223, 223);
+  bottom: 0;
+}
+
+.nombre {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }

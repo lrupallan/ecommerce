@@ -19,7 +19,7 @@ const Counter = ({stock}) => {
     <div className={estilos.contenedorMain}>
       <div className={estilos.contenedorSecundario}>
       <button className={estilos.botonContador} onClick={restar} disabled={count === 0}>-</button>
-      <p>Count: {count}</p>
+      <p className={estilos.cantidad}>Count: {count}</p>
       <button className={estilos.botonContador} onClick={sumar}>+</button>
       </div>
       <button className={estilos.botonCarrito} disabled={count === 0}>Agregar al carrito</button>

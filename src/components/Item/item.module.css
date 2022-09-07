@@ -7,15 +7,17 @@
   width: 20em;
   border-radius: 20px;
   border: 2px solid gray;
-  padding: 2em;
+  padding: 1em;
+
 }
 
 .itemImage {
   display: flex;
   align-content: center;
-  width: 15em;
+  width: 100%;
   height: 15em;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .itemTitle {
@@ -29,4 +31,17 @@
   display: flex;
   font-size: 1.5em;
   justify-content: center;
+}
+
+.itemButton {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+  border: black solid 2px;
+  margin-top: 1em;
+  width: fit-content;
+  font-size: 1.3em;
 }

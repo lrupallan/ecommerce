@@ -1,7 +1,7 @@
 import estilos from './navbar.module.css';
 import CartWidget from '../CartWidget/CartWidget';
 import React from 'react';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
 
@@ -9,19 +9,18 @@ const Navbar = (props) => {
       return (
       
         <nav className={estilos.contenedorMain}>
+          <Link to="/">37080</Link>
           <ul>
-            <li>
-              <a href='https://google.com'>Productos</a>
-            </li>
-            <li>
-              <a href='https://google.com'>Nosotros</a>
-            </li>
-            <li>
-              <a href='https://google.com'>Contacto</a>
-            </li>
+            <Link to="/category/perros">Perro</Link>
+            
+            <Link to="/category/gatos">Gato</Link>
+            
+            <Link to="/category/viejitos">Viejitos</Link>
           </ul>
-          <Button value='Sign in' variant='primary'/>
-          <CartWidget/>
+          
+          <Link to="/cart">
+            <CartWidget/>
+          </Link>
         </nav>
       );
     }else {
