@@ -1,28 +1,30 @@
 import React, {useState} from 'react';
 import estilos from './counter.module.css';
 
-const Counter = ({stock}) => {
+const Counter = ({stock, onAdd, initial}) => {
   
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(initial);
 
 
   const sumar = () => {
-    count < stock ? setCount(count + 1) : alert("Alcanzaste el máximo");
+    count < stock && setCount(count + 1);
   };
 
   const restar = () => {
     setCount(count - 1)
-  }
+  };
+
+  
 
   return (
     <div className={estilos.contenedorMain}>
       <div className={estilos.contenedorSecundario}>
       <button className={estilos.botonContador} onClick={restar} disabled={count === 0}>-</button>
-      <p className={estilos.cantidad}>Count: {count}</p>
+      <p className={estilos.cantidad}>Módulos: {count}</p>
       <button className={estilos.botonContador} onClick={sumar}>+</button>
       </div>
-      <button className={estilos.botonCarrito} disabled={count === 0}>Agregar al carrito</button>
+      <button onClick={(() =>onAdd(count)) }className={estilos.botonCarrito} disabled={count === 0}>Agregar al carrito</button>
     </div>
   )
 }

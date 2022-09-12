@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {products} from '../../mock/products';
 import ItemList from '../ItemList/ItemList';
+import estilos from '../ItemListContainer/itemListContainer.module.css';
 
 const ItemListContainer = (props) => {
   const [items, setItems] = useState([]);
@@ -31,7 +32,7 @@ const ItemListContainer = (props) => {
   
   return (
     <div>
-      <h2>{props.saludo}</h2>
+      <h2 className={estilos.saludo}>{props.saludo}</h2>
       <ItemList items={items}/>
       
     </div>

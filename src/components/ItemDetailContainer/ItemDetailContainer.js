@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {products} from '../../mock/products';
-import Counter from '../Counter/Counter';
 import estilos from '../ItemDetailContainer/itemDetailContainer.module.css';
 import { useParams } from 'react-router-dom';
 
@@ -35,7 +34,6 @@ const ItemDetailContainer = () => {
   return (
     <div className={estilos.mainContainer}>
       <ItemDetail key={item.idProdNumerico} item={item}/>
-      <Counter stock={35}/>
     </div>
   )
 }
