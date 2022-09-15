@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
 import Counter from '../Counter/Counter';
 import estilos from '../ItemDetail/itemDetail.module.css'
 
 const ItemDetail = ({item}) => {
   const [cantidad, setCantidad] = useState(0)
-  const onAdd = (arg) => {
-    setCantidad(arg);
+  const {addToCart} = useContext(CartContext);
+
+  const onAdd = (cantidadItem) => {
+    setCantidad(cantidadItem);
+    addToCart(item, cantidadItem);
   }
 
   return (

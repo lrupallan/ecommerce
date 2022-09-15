@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
         console.log(error);
       })
       .finally(() => {
-        console.log('Finally');
+        // console.log('Finally');
       });
     
   }, [idProdNumerico]);
