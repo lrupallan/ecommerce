@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
+import { useEffect } from 'react';
 import estilos from './counter.module.css';
 
-const Counter = ({stock, onAdd, initial}) => {
-  
-
+const Counter = ({stock, onAdd, initial = 1}) => {
   const [count, setCount] = useState(initial);
+
+  useEffect(()=> {
+    setCount(initial)
+  }, [initial]);
 
 
   const sumar = () => {
