@@ -11,20 +11,20 @@ const ItemDetailContainer = () => {
   const {idProd} = useParams();
   
    useEffect(() => {
-    const itemCollection = collection(db, 'productos')
-    const ref = doc(itemCollection, idProd)
+    const itemCollection = collection(db, 'productos');
+    const ref = doc(itemCollection, idProd);
     getDoc(ref)
     .then((resp)=> {
       setItem({
         id: resp.id,
-        ...resp.data(),
+        ...resp.data()
       });
     });
     
   }, [idProd]);
   return (
     <div className={estilos.mainContainer}>
-      <ItemDetail key={item.idProdNumerico} item={item}/>
+      <ItemDetail key={item.idProd} item={item}/>
     </div>
   )
 }

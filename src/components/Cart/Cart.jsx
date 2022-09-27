@@ -1,13 +1,26 @@
 import React from 'react'
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-// import Form from '../Form/Form';
+import Form from '../Form/Form';
 import estilos from '../Cart/cart.module.css';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 
 const Cart = () => {
+  const [idCompra, setIdCompra] = useState('');
   const {cart, clearCart, eliminarProd, totalPrice, totalQuantity} = useContext(CartContext);
+
+  const total = totalPrice();
+  const handleId = (id) => {
+    setIdCompra(id)
+  }
+
+  if (idCompra) {
+    return <h1>Muchas gracias por tu donacion! Tu numero de ticket es: {idCompra}</h1>
+  }
+
+
   return (
     <div className={estilos.mainContainer}>
       {cart.map((prod)=> (
@@ -27,7 +40,7 @@ const Cart = () => {
 
             <h4 className={estilos.totalCantidad}>Modulos totales: {totalQuantity()}</h4>
             <h4 className={estilos.totalCompra}>Total: ${totalPrice()}</h4>
-              {/* <Form /> */}
+              <Form cart={cart} total={total} clearCart={clearCart} handleId={handleId}/>
             <button className={estilos.clearCart} onClick={clearCart}>Limpiar carrito</button>
          </>
         )}

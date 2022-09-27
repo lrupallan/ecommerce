@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 1em;
 }
 
@@ -14,14 +15,16 @@ ul {
   width: 50%;
 }
 
+
 li {
   padding: 1em;
   list-style: none;
+  text-decoration: none;
 }
 
-a {
-  color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
+.active {
+  background-color: black;
+  color: white;
 }
 
 .footer {
