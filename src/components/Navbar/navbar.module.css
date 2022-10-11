@@ -22,10 +22,6 @@ li {
   text-decoration: none;
 }
 
-.active {
-  background-color: black;
-  color: white;
-}
 
 .footer {
   display: flex;

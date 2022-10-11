@@ -1,10 +1,10 @@
 import React from 'react';
 import estilos from'./main.module.css';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
-// import Button from '../Button/Button';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 import { Route, Routes } from 'react-router-dom';
 import Cart from '../Cart/Cart';
+import CheckOut from '../checkOut/CheckOut';
 
 
 const Main = (props) => {
@@ -14,14 +14,15 @@ const Main = (props) => {
         <Routes>
           <Route 
           path="/" 
-          element={<ItemListContainer saludo='Bienvenidos al centro de donaciones para perros y gatos rescatados&#128054;&#128049;&#128150;'/>}
+          element={<ItemListContainer saludo='BIENVENIDO AL CENTRO DE DONACIONES PARA PERROS Y GATOS RESCATADOS&#128054;&#128049;'/>}
           />
           <Route
           path="/category/:categoryName"
           element={<ItemListContainer/>} />
           <Route path="/detail/:idProd" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
-          {/* <Button value='Log out' variant='secondary'/> */}
+          <Route path="/checkout" element={<CheckOut />} />
+
           </Routes>
       </main>
   )

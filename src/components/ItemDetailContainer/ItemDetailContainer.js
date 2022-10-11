@@ -29,25 +29,4 @@ const ItemDetailContainer = () => {
   )
 }
 
-// useEffect(() => {
-//   const getProduct = () =>
-//    new Promise((res, rej)=> {
-//     const product = products.find((producto) => producto.id === idProdNumerico);
-
-//     setTimeout(() => {
-//       res(product);
-//     }, 500);
-//   });
-
-//   getProduct()
-//     .then((data) => {
-//       setItem(data);
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     })
-//     .finally(() => {
-//       // console.log('Finally');
-//     });
-
 export default ItemDetailContainer

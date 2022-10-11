@@ -50,12 +50,5 @@ const Navbar = (props) => {
   );
 };
 
-// {/* <>
-//             <Link to="/category/perros">Perro</Link>
-
-//             <Link to="/category/gatos">Gato</Link>
-
-//             <Link to="/category/viejitos">Viejitos</Link>
-//           </> */}
 
 export default Navbar;
