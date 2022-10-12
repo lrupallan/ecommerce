@@ -5,15 +5,17 @@ La aplicación consiste en un 'ecommerce' destinado a conseguir donaciones para 
 ![](public/Screenshot%20(139).png)
 En el detalle de cada animal puede verse una breve descripción y se puede elegir la cantidad a donar a traves de un contador que tiene como máximo el stock disponible de módulos para cada perro o gato.
 
-![](public/Screenshot%20(142).png)
+
 Al tocar el boton 'Agregar al carrito' este nos llevara a nuestro carrito donde podremos ver el detalle de nuestra 'compra' (cantidad total de modulos y precio total).
-![](public/Screenshot%20(144).png)
+
 Una vez en el carrito podremos ver los siguientes botones:
 
 - Eliminar donacion: Para borrar de manera individual los 'articulos' de nuestro carrito.
 - Limpiar carrito: Elimina todos los módulos previamente agregados.
 - Seguir mirando: Nos lleva nuevamente a la página de inicio.
 - Finalizar donación: Nos lleva al check-out.
+
+[Probar ecommerce](https://frabjous-twilight-be1f21.netlify.app/)
 
 ## Librerias utilizadas
 
